@@ -3,7 +3,7 @@ const mysql = require('mysql2')
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Fichico07',
+    password: process.env.DBPASS,
     database: 'todotaskmanager'
 })
 
